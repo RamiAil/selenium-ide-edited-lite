@@ -1,0 +1,2 @@
+build/third_party/closure/closure.mf
+third_party/closure/goog/base.js

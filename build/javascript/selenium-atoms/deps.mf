@@ -1,0 +1,17 @@
+build/javascript/selenium-atoms/deps.mf
+//javascript/atoms:all_js
+//javascript/webdriver/atoms:all_js
+javascript/selenium-atoms/locator_strategies.js
+javascript/selenium-atoms/atoms.js
+javascript/selenium-atoms/events.js
+javascript/selenium-atoms/gettext.js
+javascript/selenium-atoms/se_element.js
+javascript/selenium-atoms/select.js
+javascript/selenium-atoms/pattern_matcher.js
+javascript/selenium-atoms/text.js
+javascript/selenium-atoms/browserbot.js
+javascript/selenium-atoms/filters.js
+javascript/selenium-atoms/firefox-chrome.js
+javascript/selenium-atoms/inject.js
+javascript/selenium-atoms/core.js
+javascript/selenium-atoms/se_locators.js
