@@ -10,7 +10,8 @@ echo "Disabling the add-on installation signiture required so we can install an 
 
 echo 'pref("xpinstall.signatures.required", "false");' >> ./firefox/defaults/pref/channel-prefs.js
 
-echo "\n\n Please read before continuing: Now installing Selenium IDE plugin, firefox will run and prompt an add on installation windows"
+echo " "
+echo "Please read before continuing: Now installing Selenium IDE plugin, firefox will run TWICE and prompt an add on installation window"
 echo 'please press install and if you get a "restart now" message close firefox and DO NOT press "restart now"'
 
 read -p "Press enter to continue"
@@ -24,4 +25,4 @@ read -p "Press enter to continue"
 echo "Installing Selenium IDE python-format plugin, please shut down firefox after the installation ..."
 ./firefox/firefox ./build/ide/plugins/python-Stanislav/python-format.xpi
 
-echo "Intallation Completed!"
+#echo "Intallation Completed!"
