@@ -8,8 +8,7 @@ tar -xjf ./firefox-52.1.2esr.tar.bz2
 
 echo "Disabling the add-on installation signiture required so we can install an open source add-on"
 
-echo 'pref("xpinstall.signatures.required", "false");' >> ./firefox/defaults/pref
-channel-prefs.js
+echo 'pref("xpinstall.signatures.required", "false");' >> ./firefox/defaults/pref/channel-prefs.js
 
 echo "Installing Selenium IDE plugin, please restart firefox and shut it down after the installation ..."
 ./firefox/firefox ./build/ide/main/selenium-ide.xpi &
