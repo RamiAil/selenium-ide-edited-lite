@@ -17,7 +17,17 @@ After cloning this repository just run the "run.sh" and you should get:
 2- The Selenium IDE add-on is installed in Firefox
 3- The "Stanislav Formatter" is installed as a plugin in the Selenium IDE add-on
 
-add some details about ".xpi" files
+The Selenium IDE add-on intsallation/Execution file is called "selenium-ide.xpi" and is found in "/build/ide/main/", this add-on is compiled from the source
+found in "Selenium IDE Edited Lite/ide/main/". If in the future you want to update/change the code and compile a new "selenium-ide.xpi",
+you should run this compilation command from the main directory:
+./go //ide/main:selenium-ide
+
+The Selenium IDE python formatter intsallation/Execution file is called "python-format.xpi" and is found in "Selenium IDE Edited Lite/build/ide/plugins/python-Stanislav/", this formatter is compiled from the source
+found in " Selenium IDE Edited Lite/ide/plugins/python-Stanislav/src/content/formats/python-Stanislav.js". If in the future you want to update/change the code and compile a new "python-format.xpi",
+you should run this compilation command from the main directory:
+./go //ide/plugins/python-Stanislav:python-format
+The main updates and changes I've done were in this file, so for any change/update I think that the best thing is to start here.
+
 
 Working with the plugin is exactly like working with the original Selenium IDE (can be found here: http://www.seleniumhq.org/docs/02_selenium_ide.jsp).
 
