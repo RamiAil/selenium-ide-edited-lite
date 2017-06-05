@@ -12,5 +12,5 @@ This IDE Can support:
 The Automatic installing script is "run.sh" and can be found in this Repository.
 After cloning it just run the "run.sh" and you should get:
 1- Mozilla Firefox ESR version 52.1.2
-2- The Selenium IDE add-on installed in firefox
+2- The Selenium IDE add-on installed in Firefox
 3- The "Stanislav Formatter" installed as a plugin in the Selenium IDE add-on
