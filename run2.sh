@@ -29,7 +29,7 @@ pwd=`pwd`
 sudo ln -s `echo $pwd`/firefox/firefox /usr/bin/firefox
 
 firefox &
-sleep 5
+sleep 10
 killall firefox
 
 echo "Disabling the add-on installation signature required so we can install an open source add-on"
