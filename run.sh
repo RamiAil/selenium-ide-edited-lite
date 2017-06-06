@@ -16,7 +16,7 @@ echo 'please press install and if you get a "restart now" message close firefox 
 
 read -p "Press enter to continue"
 
-./firefox/firefox ./build/ide/main/selenium-ide.xpi &
+./firefox/firefox ./build/ide/main/selenium-ide.xpi
 
 #sleep 10
 #my_child_PID=$!
