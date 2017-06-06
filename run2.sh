@@ -7,6 +7,8 @@ sudo apt-get -y install git default-jdk curl
 
 echo "Deleting the existing Firefox"
 
+killall firefox
+
 sudo apt-get remove -y --purge firefox
 
 sudo rm -rf ~/.mozilla/
