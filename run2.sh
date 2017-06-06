@@ -44,7 +44,7 @@ killall firefox
 echo "Disabling the add-on installation signature required so we can install an open source add-on"
 echo 'user_pref("xpinstall.signatures.required", false);' >> ~/.mozilla/firefox/*.default/prefs.js
 
-
+sleep 2
 
 ./firefox/firefox ./build/ide/main/selenium-ide.xpi
 
