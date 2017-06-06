@@ -46,16 +46,6 @@ function SeleneseMapper() {
 }
 
 SeleneseMapper.remap = function(cmd) {
-/*
-  for (var mapper in SeleneseMapper) {
-    if (SeleneseMapper.hasOwnProperty(mapper) && typeof SeleneseMapper.mapper.isDefined === 'function'  && typeof SeleneseMapper.mapper.convert === 'function') {
-      if (SeleneseMapper.mapper.isDefined(cmd)) {
-        return SeleneseMapper.mapper.convert(cmd);
-      }
-    }
-  }
-*/
-  // NOTE The above code is useful if there are more than one mappers, since there is just one, it is more efficient to call it directly
   if (SeleneseMapper.IsTextPresent.isDefined(cmd)) {
     return SeleneseMapper.IsTextPresent.convert(cmd);
   }
@@ -517,18 +507,6 @@ function formatCommand(command) {
     }
   } catch(e) {
     this.log.error("Caught exception: [" + e + "]");
-    // TODO
-//    var call = new CallSelenium(command.command);
-//    if ((command.target != null && command.target.length > 0)
-//        || (command.value != null && command.value.length > 0)) {
-//      call.rawArgs.push(command.target);
-//      call.args.push(string(command.target));
-//      if (command.value != null && command.value.length > 0) {
-//        call.rawArgs.push(command.value);
-//        call.args.push(string(command.value));
-//      }
-//    }
-//    line = formatComment(new Comment(statement(call)));
     line = formatComment(new Comment('ERROR: Caught exception [' + e + ']'));
   }
   if (line && this.assertOrVerifyFailureOnNext) {
@@ -537,7 +515,6 @@ function formatCommand(command) {
     this.assertFailureOnNext = false;
     this.verifyFailureOnNext = false;
   }
-  //TODO: convert array to newline separated string -> if(array) return array.join"\n"
   if (command.type == 'command' && options.showSelenese && options.showSelenese == 'true') {
     if (command.remapped) {
       line = formatComment(new Comment(command.remapped.command + ' | ' + command.remapped.target + ' | ' + command.remapped.value)) + "\n" + line;
@@ -748,9 +725,6 @@ SeleniumWebDriverAdaptor.prototype.isChecked = function(elementLocator) {
 
 SeleniumWebDriverAdaptor.prototype.isElementPresent = function(elementLocator) {
   var locator = this._elementLocator(this.rawArgs[0]);
-  //var driver = new WDAPI.Driver();
-  //TODO: enough to just find element, but since this is an accessor, we will need to make a not null comparison
-  //return driver.findElement(locator.type, locator.string);
   return WDAPI.Utils.isElementPresent(locator.type, locator.string);
 };
 
@@ -824,42 +798,6 @@ SeleniumWebDriverAdaptor.prototype.selectWindow = function(elementLocator) {
   return driver.selectWindow(locator.type, locator.string)
 };
 
-//SeleniumWebDriverAdaptor.prototype.isSomethingSelected = function(elementLocator) {
-////  var locator = this._elementLocator(this.rawArgs[0]);
-////  var driver = new WDAPI.Driver();
-////  var webElement = driver.findElement(locator.type, locator.string);
-////  return ifCondition(new SeleniumWebDriverAdaptor.SimpleExpression(webElement.isSelected()), function() { return indents(1) + webElement.click() + "\n";} );
-////  if (this.args.length != 1) {
-////    alert("Arguments for " + this.message + " is not 1, received " + this.args.length);
-////    //TODO show the arguments
-////  } else {
-////    result += 'findElement(';
-////    result += this.elementLocator();
-////    result += ')';
-////    var sel = 'new Select(' + result + ')';
-////    result = sel + '.getAllSelectedOptions().isEmpty()';
-////    return '!' + result;
-////  }
-//};
-//
-//SeleniumWebDriverAdaptor.prototype.isSomethingSelected = function(elementLocator) {
-////  var locator = this._elementLocator(this.rawArgs[0]);
-////  var driver = new WDAPI.Driver();
-////  var webElement = driver.findElement(locator.type, locator.string);
-////  return ifCondition(new SeleniumWebDriverAdaptor.SimpleExpression(webElement.isSelected()), function() { return indents(1) + webElement.click() + "\n";} );
-////  if (this.args.length != 2) {
-////    alert("Arguments for " + this.message + " is not 2, received " + this.args.length);
-////    //TODO show the arguments
-////  } else {
-////    result += 'findElement(';
-////    result += this.elementLocator();
-////    result += ')';
-////    var sel = 'new Select(' + result + ')';
-////    result = sel + '.deselectAll();\n';
-////    result += sel + this.selectLocator();
-////    return result;
-////  }
-//};
 
 function WDAPI() {
 }
