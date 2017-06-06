@@ -22,17 +22,15 @@ found in "Selenium IDE Edited Lite/ide/main/". If in the future you want to upda
 you should run this compilation command from the main directory:
 ./go //ide/main:selenium-ide
 
-The Selenium IDE python formatter intsallation/Execution file is called "python-format.xpi" and is found in "Selenium IDE Edited Lite/build/ide/plugins/python-Stanislav/", this formatter is compiled from the source
-found in " Selenium IDE Edited Lite/ide/plugins/python-Stanislav/src/content/formats/python-Stanislav.js". If in the future you want to update/change the code and compile a new "python-format.xpi",
+The Selenium IDE python formatter intsallation/Execution file is called "python-format.xpi" and is found in "Selenium IDE Edited Lite/build/ide/plugins/python-Stanislav/", this formatter is compiled from the source found in " Selenium IDE Edited Lite/ide/plugins/python-Stanislav/src/content/formats/python-Stanislav.js".
+If in the future you want to update/change the code and compile a new "python-format.xpi",
 you should run this compilation command from the main directory:
 ./go //ide/plugins/python-Stanislav:python-format
 The main updates and changes I've done were in this file, so for any change/update I think that the best thing is to start here.
+
+Note: I had a strange error while compiling inside the git directory, if you encounter some problems, try copying all the files inside the git directory to a new directory and try to build there.
 
 
 Working with the plugin is exactly like working with the original Selenium IDE (can be found here: http://www.seleniumhq.org/docs/02_selenium_ide.jsp).
 
 Whenever you need to export a Selenium python script, just go to "File -> Export Test Case As ... -> python-Stanislav"
-
-
-
-
