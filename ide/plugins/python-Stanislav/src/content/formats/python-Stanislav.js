@@ -1095,11 +1095,11 @@ this.options = {
           'from settings import mapped_port_host\n\n' +
           'class Exploit(BasicExploit):\n\n' +
           '    attributes = {\n'+
-          '        "Name" : "Nodegoat_login",\n' +
-          '        "Description" : "",\n' +
-          '        "Target" : "nodegoat",\n' +
-          '        "Container" : "ubuntu-node-mongo",\n' +
-          '        "Type" : ""\n' +
+          '        "Name" : " ",\n' +
+          '        "Description" : " ",\n' +
+          '        "Target" : " ",\n' +
+          '        "Container" : " ",\n' +
+          '        "Type" : " "\n' +
           '    }\n\n' +
           '    def runExploit(self):\n' +
           '        self.base_url = "${baseURL}"\n' +
