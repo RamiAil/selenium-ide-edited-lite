@@ -23,6 +23,6 @@ read -p "Press enter to continue"
 #kill -9 $my_child_PID
 
 echo "Installing Selenium IDE python-format plugin, please shut down firefox after the installation ..."
-./firefox/firefox ./build/ide/plugins/python-Stanislav/python-format.xpi
+./firefox/firefox ./build/ide/plugins/python-TestREx/python-format.xpi
 
 #echo "Intallation Completed!"

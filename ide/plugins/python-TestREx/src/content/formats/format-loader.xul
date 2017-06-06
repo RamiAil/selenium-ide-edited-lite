@@ -8,6 +8,6 @@
     <html:script type="application/javascript">
         var ide_api = new API();
         ide_api.addPlugin("pythonformatters@seleniumhq.org");
-        ide_api.addPluginProvidedFormatter("pythonwdformatter", "python-Stanislav", "chrome://python-formatters/content/formats/python-Stanislav.js", "webdriver");
+        ide_api.addPluginProvidedFormatter("pythonwdformatter", "python-TestREx", "chrome://python-formatters/content/formats/python-TestREx.js", "webdriver");
     </html:script>
 </overlay>
