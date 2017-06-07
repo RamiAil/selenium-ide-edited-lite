@@ -33,6 +33,6 @@ you should run this compilation command from the main directory:
 ./go //ide/plugins/python-TestREx:python-format
 The main updates and changes I've done were in this file, so for any change/update I think that the best thing is to start here.
 
-Note: I had a strange error while compiling inside the git directory, if you encounter the same errors, try copying all the files inside the git directory to a new directory and try to compile there.
+Note: I had a strange error ('sh': Command failed with status (127): [sh .git-fixfiles...] (RuntimeError)) while compiling inside the git directory, if you encounter the same error, try copying all the files inside the git directory to a new directory and try to compile there.
 
 For Information about working with the edited Selenium IDE, please read the HOWTO.txt file.
