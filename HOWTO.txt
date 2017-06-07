@@ -1,0 +1,24 @@
+Working with the plugin is exactly like working with the original Selenium IDE (can be found here: http://www.seleniumhq.org/docs/02_selenium_ide.jsp).
+
+Whenever you want to create a TestREx test:
+1- open Firefox and surf to the website you want to test
+2- in Firefox go to: Menu Bar -> Tools -> Selenium IDE
+3- Selenium will start as an external application, with the record button (red button in Selenium IDE) pressed, Which means that Selenium is recording you "moves"
+4- make sure that the Basr URL is set to the website you are testing
+5- start "moving" in the website and making sure Selenium is recording these moves
+6- you can also insert "moves" on your own by manually writing them in an empty line in Seleium IDE, it's especially good for inserting assertions
+
+After finishing to record your test you can export a Selenium python script, by navigating to "File -> Export Test Case As ... -> python-TestREx" inside Selenium IDE.
+
+To run the exported script you should have the TestREx project:
+1- Put the script inside [TestREx project directory]/data/exploits directory.
+2- run it by a command line like this:
+
+sudo python [TestREx project directory]/run.py --single [docker image/ target application source] --exploit [exported Selenium script].py --verbose --visibl
+
+for example:
+
+[TestREx project directory]/run.py --single xssreflected__ubuntu-node --exploit test.py --verbose --visibl
+
+
+
