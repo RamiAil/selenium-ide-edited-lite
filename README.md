@@ -35,8 +35,8 @@ The main updates and changes I've done were in this file, so for any change/upda
 
 IF you like to add more formatters other than the Selenium Formatter you can found them here:
 
-* PHP Formatters: https://addons.mozilla.org/it/firefox/addon/selenium-ide-php-formatters/
-* VBA/VBS Formatters: https://addons.mozilla.org/it/firefox/addon/selenium-ide-vbavbs-formatt/
+* PHP Formatters: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-php-formatters/
+* VBA/VBS Formatters: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-vbavbs-formatt/
 * Java/C# Formatters: https://addons.mozilla.org/en-US/firefox/addon/webdriver-backed-formatters/
 
 
