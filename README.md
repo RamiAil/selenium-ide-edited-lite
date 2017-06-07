@@ -19,7 +19,7 @@ After cloning this repository just run the "run.sh"/"run2.sh" and you should get
 The difference between run.sh and run2.sh is if there's an already installed Firefox on your machine:
 
 * run.sh will install a new one with a new TestREx Firefox profile (about Firefox profiles: https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) without uninstalling the original Firefox.
-* run2.sh will uninstall you old Firefox and install a new one with the IDE add-on
+* run2.sh will uninstall your old Firefox and install a new one with the IDE add-on
 
 
 The Selenium IDE add-on installation/Execution file is called "selenium-ide.xpi" and is found in "/build/ide/main/", this add-on is compiled from the source
@@ -35,20 +35,4 @@ The main updates and changes I've done were in this file, so for any change/upda
 
 Note: I had a strange error while compiling inside the git directory, if you encounter the same errors, try copying all the files inside the git directory to a new directory and try to compile there.
 
-
-
 For Information about working with the edited Selenium IDE, please read the HOWTO.txt file.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
