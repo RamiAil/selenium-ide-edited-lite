@@ -1,0 +1,31 @@
+I will devide the changes to Three sections:
+
+
+1- The code that takes the user "clicks" and movements and translates them to Selenium IDE commands:
+The original Selenium IDE (the one downloaded from the mozilla plugin official website) doesn't support iframes, so code code to support them should have been added. This code was already written in some forum to fix this problem, I've taken this code and itegrated it into the source code I've downloaded from the git website with changes to supprt working with the TestREx code. This code can be found in: selenium-ide-edited-lite/ide/main/src/content/editor.js. Search the strings: "selectFrame" and "selectWindow"
+
+2- The code that takes the Selenium IDE commands as they appeare in the UI and translates them to python code: selenium-ide-edited-lite/ide/plugins/python-TestREx/src/content/formats/python-TestREx.js.
+
+The main function is: CallSelenium.prototype.toString
+This function takes the command from the UI and tries to find a function for each command to parse it.
+If there's no function to parse the command, an "Unsupported command" exception will be thrown.
+For each command (e.g selectFrame,selectWindow,...) I wrote functions to handle their parsing and to return back the right python code.
+you can find this code if by searching the strings selectFrame/selectWindow/... inside the code.
+
+Other functions I've taken from other formatters written for python and java and have changed them to work with the TestREx project, functions like find_elements/navigate/getCurrentUrl/getAlert/...  (these functions can also be searched by their names).
+
+3- The TestREx code: I've integrated some changes in the code of SeleniumWrapper.py to better support the edited Selenium IDE version. This code can be found in my branch (file: SeleniumWrapper.py).
+
+I've also added a docker image and a test to python test script which produced by the edited Selenium IDE to check the alerts assertions and iframe support. 
+
+These files are:
+
+data/configurations/app-img-dockerfiles/ide-iframe-test__ubuntu-node/Dockerfile
+data/configurations/app-img-dockerfiles/ide-iframe-test__ubuntu-node/run.sh
+data/exploits/iframe_test.py
+data/targets/app-sources/ide-iframe-test/ide-iframe-test.zip
+
+And also can be found in my branch.
+
+
+

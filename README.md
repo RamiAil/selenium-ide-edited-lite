@@ -23,16 +23,16 @@ The difference between run.sh and run2.sh is if there's an already installed Fir
 
 
 The Selenium IDE add-on installation/Execution file is called "selenium-ide.xpi" and is found in "/build/ide/main/", this add-on is compiled from the source
-found in "Selenium IDE Edited Lite/ide/main/". If in the future you want to update/change the code and compile a new "selenium-ide.xpi",
+found in "selenium-ide-edited-lite/ide/main/". If in the future you want to update/change the code and compile a new "selenium-ide.xpi",
 you should run this compilation command from the main directory:
 ./go //ide/main:selenium-ide
 
-The Selenium IDE python formatter installation/Execution file is called "python-format.xpi" and is found in "Selenium IDE Edited Lite/build/ide/plugins/python-TestREx/", this formatter is compiled from the source found in " Selenium IDE Edited Lite/ide/plugins/python-TestREx/src/content/formats/python-TestREx.js".
+The Selenium IDE python formatter installation/Execution file is called "python-format.xpi" and is found in "selenium-ide-edited-lite/ide/plugins/python-TestREx/src/content/formats/python-TestREx.js".
 If in the future you want to update/change the code and compile a new "python-format.xpi",
 you should run this compilation command from the main directory:
 ./go //ide/plugins/python-TestREx:python-format
-The main updates and changes I've done were in this file, so for any change/update I think that the best thing is to start here.
 
 Note: I had a strange error ('sh': Command failed with status (127): [sh .git-fixfiles...] (RuntimeError)) while compiling inside the git directory, if you encounter the same error, try copying all the files inside the git directory to a new directory and try to compile there.
 
 For Information about working with the edited Selenium IDE, please read the HOWTO.txt file.
+For Information about changes done to the code, please read the Code Changes.txt file.
