@@ -16,7 +16,7 @@ After cloning this repository just run the "run.sh"/"run2.sh" and you should get
 2- The Selenium IDE add-on is installed in Firefox
 3- The "TestREx Formatter" is installed as a plugin in the Selenium IDE add-on
 
-The difference between run and run2 is if there's an already installed Firefox on your machine:
+The difference between run.sh and run2.sh is if there's an already installed Firefox on your machine:
 * run.sh will install a new one with a new TestREx Firefox profile (about Firefox profiles: https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) without uninstalling the original Firefox.
 * run2.sh will uninstall you old Firefox and install a new one with the IDE add-on
 
