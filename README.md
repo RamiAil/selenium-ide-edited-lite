@@ -33,6 +33,13 @@ you should run this compilation command from the main directory:
 ./go //ide/plugins/python-TestREx:python-format
 The main updates and changes I've done were in this file, so for any change/update I think that the best thing is to start here.
 
+IF you like to add more formatters other than the Selenium Formatter you can found them here:
+
+* PHP Formatters: https://addons.mozilla.org/it/firefox/addon/selenium-ide-php-formatters/
+* VBA/VBS Formatters: https://addons.mozilla.org/it/firefox/addon/selenium-ide-vbavbs-formatt/
+* Java/C# Formatters: https://addons.mozilla.org/en-US/firefox/addon/webdriver-backed-formatters/
+
+
 Note: I had a strange error ('sh': Command failed with status (127): [sh .git-fixfiles...] (RuntimeError)) while compiling inside the git directory, if you encounter the same error, try copying all the files inside the git directory to a new directory and try to compile there.
 
 For Information about working with the edited Selenium IDE, please read the HOWTO.txt file.
