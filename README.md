@@ -39,7 +39,7 @@ IF you like to add more formatters other than the Selenium Formatter you can fou
 * VBA/VBS Formatters: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-vbavbs-formatt/
 * Java/C# Formatters: https://addons.mozilla.org/en-US/firefox/addon/webdriver-backed-formatters/
 
-You can install them as add-ons after installing the Selenium IDE
+You can install them as add-ons after installing the Selenium IDE.
 
 Note: I had a strange error ('sh': Command failed with status (127): [sh .git-fixfiles...] (RuntimeError)) while compiling inside the git directory, if you encounter the same error, try copying all the files inside the git directory to a new directory and try to compile there.
 
