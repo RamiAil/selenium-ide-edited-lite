@@ -22,23 +22,19 @@ The difference between run.sh and run2.sh is if there's an already installed Fir
 * run.sh will install a new Firefox with a new TestREx Firefox profile (about Firefox profiles: https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) without uninstalling the original Firefox.
 * run2.sh will uninstall your old Firefox and install a new one with the IDE add-on
 
-The Selenium IDE source code can be found here: "selenium-ide-edited-lite/ide/main/"
-When compiled it will build a Selenium IDE add-on installation/execution file which is called "selenium-ide.xpi" and is found in "/build/ide/main/".
+The Selenium IDE source code can be found here: "/ide/main/"   
+When compiled it will build a Selenium IDE add-on installation/execution file which is called "selenium-ide.xpi" and can be found in "/build/ide/main/".
 
-If in the future you want to update/change the code and compile a new "selenium-ide.xpi",
-you should run this compilation command from the main directory:
+If in the future you want to update/change the IDE source code and compile a new "selenium-ide.xpi", you should run this compilation command from the main directory:
 ./go //ide/main:selenium-ide
 
-The Selenium IDE formatter source code can be found here: "selenium-ide-edited-lite/ide/plugins/python-TestREx/src/content/formats/python-TestREx.js".
+The Selenium IDE TestREx formatter source code can be found here: "/ide/plugins/python-TestREx/src/content/formats/python-TestREx.js".   
+When compiled it will build a Selenium IDE formatter add-on installation/execution file which is called "python-format.xpi and can be found in "build/ide/plugins/python-TestREx".
 
-When compiled it will build a Selenium IDE formatter add-on installation/execution file which is called "python-format.xpi and is found in "build/ide/plugins/python-TestREx".
-
-The Selenium IDE python formatter installation/execution file is called "python-format.xpi" and is found in 
-If in the future you want to update/change the code and compile a new "python-format.xpi",
-you should run this compilation command from the main directory:
+If in the future you want to update/change the TestREx formatter source code and compile a new "python-format.xpi", you should run this compilation command from the main directory:
 ./go //ide/plugins/python-TestREx:python-format
 
-IF you like to add more formatters other than the Selenium Formatter you can found them here:
+IF you like to install more formatters other than the Selenium TestREx formatter you can find them here:
 
 * PHP Formatters: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-php-formatters/
 * VBA/VBS Formatters: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-vbavbs-formatt/
@@ -46,7 +42,8 @@ IF you like to add more formatters other than the Selenium Formatter you can fou
 
 You can install them as add-ons after installing the Selenium IDE.
 
-Note: I had a strange error ('sh': Command failed with status (127): [sh .git-fixfiles...] (RuntimeError)) while compiling inside the git directory, if you encounter the same error, try copying all the files inside the git directory to a new directory and try to compile there.
+Note: When compiling the source code inside the git directory, I had a strange error ('sh': Command failed with status (127): [sh .git-fixfiles...] (RuntimeError)).  
+if you encounter the same error, try copying all the files inside the git directory to a new directory and try to compile them there.
 
-For Information about working with the edited Selenium IDE, please read the HOWTO.txt file.
-For Information about changes done to the code, please read the Code Changes.txt file.
+For information about working with the edited Selenium IDE, please read the HOWTO.txt file.
+For information about changes done to the code, please read the Code Changes.txt file.
