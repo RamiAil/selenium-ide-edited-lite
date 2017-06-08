@@ -39,6 +39,9 @@ IF you like to install more formatters other than the Selenium TestREx formatter
 * PHP Formatters: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-php-formatters/
 * VBA/VBS Formatters: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-vbavbs-formatt/
 * Java/C# Formatters: https://addons.mozilla.org/en-US/firefox/addon/webdriver-backed-formatters/
+* For more formatters: please got to: http://www.seleniumhq.org/download/
+and search for: "Selenium IDE Plugins (that provide import / export / language support)"
+
 
 You can install them as add-ons after installing the Selenium IDE.
 
