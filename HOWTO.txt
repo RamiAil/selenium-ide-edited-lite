@@ -3,22 +3,33 @@ Working with the plugin is exactly like working with the original Selenium IDE (
 Whenever you want to create a TestREx test:
 1- open Firefox and surf to the website you want to test
 2- in Firefox go to: Menu Bar -> Tools -> Selenium IDE
-3- Selenium will start as an external application, with the record button (red button in Selenium IDE) pressed, Which means that Selenium is recording your "moves"
+3- Selenium will start as an external application, with the record button (red button in Selenium IDE) pressed, which means that Selenium is recording your "moves"
 4- make sure that the Base URL is set to the website you are testing
 5- start "moving" in the website while making sure Selenium is recording these moves
 6- you can also insert "moves"/commands on your own by manually writing them in an empty line in Seleium IDE, it's especially good for inserting assertions
 
-After finishing to record your test you can export a Selenium python script, by navigating to "File -> Export Test Case As ... -> python-TestREx" inside Selenium IDE.
+After finishing to record your "moves"/commands you can:
 
-To run the exported script, you should have the TestREx project:
-1- Put the newly exported python script inside [TestREx project directory]/data/exploits directory.
-2- run it by a command line like this:
+	* Export them a Selenium python script, by navigating to "File -> Export Test Case As ... -> python-TestREx" inside Selenium IDE.
 
-sudo python [TestREx project directory]/run.py --single [docker image/ target application source] --exploit [exported Selenium script].py --verbose --visible
+		To run the exported script, you should have the TestREx project:
+		1- Put the newly exported python script inside [TestREx project directory]/data/exploits directory.
+		2- run it by a command line like this:
 
-for example:
+		sudo python [TestREx project directory]/run.py --single [docker image/ target application source] --exploit [exported Selenium script].py --verbose --visible
 
-[TestREx project directory]/run.py --single xssreflected__ubuntu-node --exploit python_test.py --verbose --visible
+		for example:
+
+		[TestREx project directory]/run.py --single xssreflected__ubuntu-node --exploit python_test.py --verbose --visible
+
+	* Save them as a Selenium IDE test (it can be an HTML format) and open it afterwards to update/view/export/... it:
+		
+		1- you can do that by navigating to "File -> Save Test Case As ..." inside Selenium IDE.
+		2- Whenever you want to open this test/any other Selenium IDE test, you can do so by navigating to: "File -> Open..."
+		
+The directory: "/ide/tests/" has two test files for example:
+	1- iframe_test.py: a test which was exported by the first method
+	2- iframe_test.html: a test which was saved by the second method
 
 
 
