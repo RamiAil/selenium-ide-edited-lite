@@ -22,7 +22,7 @@ The difference between run.sh and run2.sh is if there's an already installed Fir
 * run.sh will install a new Firefox with a new TestREx Firefox profile (about Firefox profiles: https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) without uninstalling the original Firefox.
 * run2.sh will uninstall your old Firefox and install a new one with the IDE add-on
 
-The Selenium IDE source code can be found here: "/ide/main/"   
+The Selenium IDE source code can be found here: "/ide/main/".   
 When compiled it will build a Selenium IDE add-on installation/execution file which is called "selenium-ide.xpi" and can be found in "/build/ide/main/".
 
 If in the future you want to update/change the IDE source code and compile a new "selenium-ide.xpi", you should run this compilation command from the main directory:
@@ -43,7 +43,7 @@ IF you like to install more formatters other than the Selenium TestREx formatter
 You can install them as add-ons after installing the Selenium IDE.
 
 Note: When compiling the source code inside the git directory, I had a strange error ('sh': Command failed with status (127): [sh .git-fixfiles...] (RuntimeError)).  
-if you encounter the same error, try copying all the files inside the git directory to a new directory and try to compile them there.
+If you encounter the same error, try copying all the files inside the git directory to a new directory and try to compile them there.
 
-For information about working with the edited Selenium IDE, please read the HOWTO.txt file.
+For information about working with the edited Selenium IDE, please read the HOWTO.txt file.  
 For information about changes done to the code, please read the Code Changes.txt file.
