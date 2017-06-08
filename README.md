@@ -14,7 +14,9 @@ The Automatic installing scripts are "run.sh" and "run2.sh" and can be found in 
 After cloning this repository just run the "run.sh" or "run2.sh" and you should get:
 
 1- Mozilla Firefox ESR version 52.1.2 is downloaded and unzipped in the working directory
+
 2- The Selenium IDE add-on is installed in Firefox
+
 3- The "TestREx Formatter" is installed as a plugin in the Selenium IDE add-on
 
 The difference between run.sh and run2.sh is if there's an already installed Firefox on your machine:
