@@ -1196,8 +1196,14 @@ WDAPI.Driver.prototype.close = function() {
 };
 
 WDAPI.Driver.prototype.selectFrame = function(locatorType, locator) {
+  var Together = xlateArgument(locatorType + '=' + locator);
   var locatorString = xlateArgument(locator);
-  return 'wrapper.switchToframe(' + locatorString +')' ;
+  if (locatorType == 'relative') {
+    return 'wrapper.switchToframe(' + Together +')' ;
+  }
+  else {
+    return 'wrapper.switchToframe(' + locatorString + ')' ;
+  }
   //return this.ref + ".selectFrame()";
 };
 
