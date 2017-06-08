@@ -42,7 +42,6 @@ IF you like to install more formatters other than the Selenium TestREx formatter
 * For more formatters: please got to: http://www.seleniumhq.org/download/
 and search for: "Selenium IDE Plugins (that provide import / export / language support)"
 
-
 You can install them as add-ons after installing the Selenium IDE.
 
 Note: When compiling the source code inside the git directory, I had a strange error ('sh': Command failed with status (127): [sh .git-fixfiles...] (RuntimeError)).  
