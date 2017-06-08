@@ -1,7 +1,6 @@
-I will divide the changes to Three sections:
+I will divide the changes into Three sections:
 
-
-1- The code that takes the user "clicks" and movements and translates them to Selenium IDE commands:
+1- The IDE source code that takes the user "clicks" and movements in Firefox and translates them to Selenium IDE commands which appear in the IDE UI:
 The original Selenium IDE (the one downloaded from the Mozilla plugin official website) doesn't support iframes,
 so code to support them should have been added. This code was already written in some forum to fix this problem,
 I've taken this code and itegrated it into the source code I've downloaded from the git website with changes to supprt working with the TestREx code.
