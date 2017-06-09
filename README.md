@@ -6,7 +6,6 @@ This IDE Can support:
 * Working with plain HTML
 * Handles iFrames
 * Records assertions
-* Handles JavaScript (simple)
 * Records assertions from JavaScript
 * Has automatic installer
 
