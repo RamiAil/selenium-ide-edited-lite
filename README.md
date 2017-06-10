@@ -11,7 +11,8 @@ This IDE Can support:
 * Records assertions from JavaScript (Partially)
 * Has automatic installer
 
-*** TESTED WITH UBUNTU 16.04.2 LTS ***
+*** TESTED WITH UBUNTU 16.04.2 LTS ***  
+
 The Automatic installing scripts are "run.sh" and "run2.sh" (Recommended for a cleaner installation) and can be found in this repository.
 After cloning this repository just run the "run.sh" (./run.sh) or "run2.sh" (./run2.sh) and you should get:
 
