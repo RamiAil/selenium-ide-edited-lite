@@ -11,8 +11,9 @@ This IDE Can support:
 * Records assertions from JavaScript (Partially)
 * Has automatic installer
 
-The Automatic installing scripts are "run.sh" and "run2.sh" and can be found in this repository.
-After cloning this repository just run the "run.sh" or "run2.sh" and you should get:
+*** TESTED WITH UBUNTU 16.04.2 LTS ***
+The Automatic installing scripts are "run.sh" and "run2.sh" (Recommended for a cleaner installation) and can be found in this repository.
+After cloning this repository just run the "run.sh" (./run.sh) or "run2.sh" (./run2.sh) and you should get:
 
 1- Mozilla Firefox ESR version 52.1.2 is downloaded and unzipped in the working director.  
 2- The Selenium IDE add-on is installed in Firefox.  
