@@ -1,12 +1,14 @@
 This is the source code for a Selenium IDE edited plugin plus a python formatter to "record" user actions (e.g., opening URLs,
-clicking buttons, interacting with web forms...), and to translate them into a Selenium script (in python) that works with TestREx Selenium Wrapper.
+clicking buttons, interacting with web forms...), and to translate them into a Selenium script (in python) that works with TestREx Selenium Wrapper:
+https://github.com/standash/TestREx
+https://www.usenix.org/system/files/conference/cset14/cset14-paper-dashevskyi.pdf
 
 This IDE Can support:
 
 * Working with plain HTML
 * Handles iFrames
 * Records assertions
-* Records assertions from JavaScript
+* Records assertions from JavaScript (Partially)
 * Has automatic installer
 
 The Automatic installing scripts are "run.sh" and "run2.sh" and can be found in this repository.
