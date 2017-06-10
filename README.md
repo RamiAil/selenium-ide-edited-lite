@@ -1,7 +1,9 @@
 This is the source code for a Selenium IDE edited plugin plus a python formatter to "record" user actions (e.g., opening URLs,
 clicking buttons, interacting with web forms...), and to translate them into a Selenium script (in python) that works with TestREx Selenium Wrapper:
 https://github.com/standash/TestREx
-https://www.usenix.org/system/files/conference/cset14/cset14-paper-dashevskyi.pdf
+https://www.usenix.org/system/files/conference/cset14/cset14-paper-dashevskyi.pdf   
+The original source code was imported from: https://github.com/SeleniumHQ/selenium/tree/master/ide
+with respect to the Apache License Version 2.0, January 2004.
 
 This IDE Can support:
 
